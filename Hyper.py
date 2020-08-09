@@ -63,7 +63,7 @@ start_time = time.time()
 grid_result = grid.fit(X, Y)
 # Summarize results
 print("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
-print("Execution time: " + str((time.time() - start_time)) + 'seconds')
+print("Execution time: " + str((time.time() - start_time)) + 'ms')
 
 dual=[True,False]
 max_iter=[100,110,120,130,140]
@@ -76,7 +76,7 @@ start_time = time.time()
 grid_result = grid.fit(X, Y)
 # Summarize results
 print("Best: %f using %s" % (grid_result.best_score_, grid_result.best_params_))
-print("Execution time: " + str((time.time() - start_time)) + 'seconds')
+print("Execution time: " + str((time.time() - start_time)) + 'ms')
 
 import warnings
 warnings.filterwarnings('ignore')
@@ -87,7 +87,7 @@ start_time = time.time()
 random_result = random.fit(X, Y)
 # Summarize results
 print("Best: %f using %s" % (random_result.best_score_, random_result.best_params_))
-print("Execution time: " + str((time.time() - start_time)) + 'seconds')
+print("Execution time: " + str((time.time() - start_time)) + 'ms')
 
 
 
